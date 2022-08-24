@@ -1,0 +1,16 @@
+Activity,Data Operation,Type,Frequency
+A Create Application,Create(appID),M,FALSE
+A Accepted,Create(offID),M,FALSE
+A Accepted,Read(offID),M,FALSE
+A Accepted,Read(address- email),M,FALSE
+A Accepted,Read(address),O,FALSE
+A Cancelled,Update(OCancelledFlag),M,TRUE
+W Call after offers start,Update(ACompletedFlag),M,FALSE
+W Call after offers complete,Update(OAcceptedFlag),M,FALSE
+W Call after offers withdraw,Update(OReturnedFlag),M,FALSE
+W Call after offers ate abort,Update(OCancelledFlag),M,FALSE
+W Validate application start,Update(AValidatedFlag),M,FALSE
+A Pending,Update(OAcceptedFlag),M,FALSE
+A Denied,Update(ORefusedFlag),M,FALSE
+W Validate application ate abort,Update(OCancelledFlag),M,TRUE
+W Call incomplete files start,Update(AInCompleteFlag),M,FALSE
